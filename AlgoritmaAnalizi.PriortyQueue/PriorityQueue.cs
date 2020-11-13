@@ -52,7 +52,6 @@ namespace AlgoritmaAnalizi.PriortyQueue
                 queue[0] = queue[heapSize];
                 queue.RemoveAt(heapSize);
                 heapSize--;
-                //Maintaining lowest or highest at root based on min or max queue
                 if (_isMinPriorityQueue)
                     MinHeapify(0);
                 else
